@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>view team</title>
+    <link rel="stylesheet" href="themes/football.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/viewTeam.js"></script>
+  </head>
+  <body>
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="inline">
+        <button id="back">Back</button>
+        <h1>Detail Team</h1>
+        <button id="fav">add to Favorite</button>
+      </div>
+      <div data-role="content" data-theme="a">
+          <div>
+                <img id ="teamPicture" width="100%" style="text-align:center" >
+                <h1 id="teamName" style="text-align:center"></h1>
+                <h3 id="teamYear" style="text-align:center"></h3>
+                <h3 id="teamStadium" style="text-align:center"></h3>
+          </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="overview">Overview</a></li>
+                    <li><a id="player">Player</a></li>
+                </ul>
+            </div>
+            <div>
+                <p id="descTeam"></p>
+                <ul id="lvPlayer" data-role="listview" data-inset="true">
+                </ul>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

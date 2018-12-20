@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>view player</title>
+    <link rel="stylesheet" href="themes/football.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/viewPlayer.js"></script>
+  </head>
+  <body>
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="inline">
+        <button id="back">Back</button>
+        <h1>Player Detail</h1>
+      </div>
+      <div data-role="content" data-theme="a">
+           <img id="playerImg" width="100%" style="text-align:center">
+           <table width = "100%">
+               <tr>
+                   <th id="textWeight"></th>
+                   <th id="textHeight"></th>
+               </tr>
+               <tr>
+                   <td id="weight" style="text-align:center"></td>
+                   <td id="height" style="text-align:center"></td>
+               </tr>
+           </table>
+           <h2 id="playerStatus"></h2>
+           <p id="descPlayer"></p>
+      </div>
+    </div>
+  </body>
+</html>

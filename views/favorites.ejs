@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <link rel="stylesheet" href="themes/football.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/favorites.js"></script>
+  </head>
+  <body>
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="inline">
+        <h1>My Favorites</h1>
+      </div>
+      <div data-role="content" data-theme="a">
+        <div data-role="navbar">
+            <ul>
+                <li><a id="match">Match</a></li>
+                <li><a id="team">Team</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul id="lvFav" data-role="listview" data-inset="true">
+            </ul>
+        </div>
+        <div data-role="footer" data-ajax = "false" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id = "matchs">Matches</a></li>
+                    <li><a id = "teams">Teams</a></li>
+                    <li><a id = "fav">Favorites</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

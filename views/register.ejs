@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>register</title>
+    <link rel="stylesheet" href="themes/football.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/register.js"></script>
+  </head>
+  <body>
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="inline">
+        <h1>Football Match Schedule</h1>
+      </div>
+      <div data-role="content" data-theme="a">
+            <form id="f_register" action="javascript:doRegister()" data-ajax="false">
+                <input type="text" name="username" placeholder="Username" id="username" required>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <input type="email" name="email" placeholder="Email" id="email" required>
+                <input type="submit" id="btnRegister" value="Register">
+            </form>
+            <div>
+                <p><a href="/" data-ajax="false">Back to Login Page</a></p>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
