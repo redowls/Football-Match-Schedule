@@ -3,9 +3,10 @@ var router = express.Router();
 var mysql = require('mysql')
 
 var connection = mysql.createConnection({
-  user : 'root',
-  password : '',
-  database : 'footballschedule'
+  user : 'bfe1d90ceb4450',
+  password : '27b2bfe1',
+  database : 'heroku_2d311b4fd91c7df',
+  host : 'eu-cdbr-west-02.cleardb.net'
 })
 
 /* GET home page. */
