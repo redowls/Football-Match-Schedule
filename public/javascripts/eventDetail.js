@@ -93,6 +93,10 @@ $(document).ready(function(){
         })
         alert('save to favorite')
     })
+    $('#logout').click(function(){
+        sessionStorage.clear()
+        window.location.href = '/'
+    })
 })
 
 $(function(){

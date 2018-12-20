@@ -29,4 +29,8 @@ $(document).ready(function(){
     $('#back').click(function(){
         window.location.href='viewTeam?idTeam='+idTeam
     })
+    $('#logout').click(function(){
+        sessionStorage.clear()
+        window.location.href = '/'
+    })
 })

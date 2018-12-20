@@ -32,6 +32,10 @@ $(document).ready(function(){
         status = 'player'
         getData(idTeam)
     })
+    $('#logout').click(function(){
+        sessionStorage.clear()
+        window.location.href = '/'
+    })
 })
 
 function getData(idTeam){

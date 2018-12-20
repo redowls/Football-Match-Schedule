@@ -37,4 +37,8 @@ $(document).ready(function(){
     $('#fav').click(function(){
         window.location.href = "/favorites"
     })
+    $('#logout').click(function(){
+        sessionStorage.clear()
+        window.location.href = '/'
+    })
 })
