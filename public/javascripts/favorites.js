@@ -3,7 +3,7 @@ var data
 
 
 function eventFav(){
-    $('#lvFav').empty()
+    // $('#lvFav').empty()
     for (let index = 0; index < data.length; index++) {
         var link = 'https://www.thesportsdb.com/api/v1/json/1/lookupevent.php?id='+data[index]
         var opt = {
@@ -25,7 +25,7 @@ function eventFav(){
 }
 
 function teamFav(){
-    $('#lvFav').empty()
+    // $('#lvFav').empty()
     for (let index = 0; index < data.length; index++) {
         var link = 'https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id='+data[index]
         var opt = {
@@ -72,10 +72,12 @@ function getData(){
 
 $(document).ready(function(){
     $('#match').click(function(e){
+        $('#lvFav').empty()
         status = 'event'
         getData()
     })
     $('#team').click(function(e){
+        $('#lvFav').empty()
         status = 'team'
         getData()
     })
