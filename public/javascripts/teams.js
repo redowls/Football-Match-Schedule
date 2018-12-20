@@ -29,12 +29,12 @@ $(function(){
 
 $(document).ready(function(){
     $('#match').click(function(){
-        window.location.href('/match')
+        window.location.href = "/match"
     })
     $('#teams').click(function(){
-        window.location.href('/teams')
+        window.location.href = "/teams"
     })
     $('#fav').click(function(){
-        $('#fav').hide()
+        window.location.href = "/favorites"
     })
 })

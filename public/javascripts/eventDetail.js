@@ -90,7 +90,6 @@ $(document).ready(function(){
             }
         })
         req.done(function(res){
-            console.log(res)
         })
         alert('save to favorite')
     })

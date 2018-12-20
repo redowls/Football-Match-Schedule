@@ -161,7 +161,6 @@ router.post('/checkFav', function(req, res){
 })
 
 router.post('/favList', function(req, res){
-  console.log('jalan')
   if(req.body.status == 'event'){
     var query =  `SELECT favEvent FROM useracc WHERE id =${req.body.id}`
   }else{
@@ -177,7 +176,6 @@ router.post('/favList', function(req, res){
       }else{
         var data = result[0].favEvent
       }
-      console.log(data)
       if(!data){
         return res.json({index : -1})
       }else{
