@@ -13,6 +13,7 @@ $(function(){
     req.done(function(res){
         var temp = res.players[0]
         $('#playerImg').attr('src', temp.strThumb)
+        $('#player').text(temp.strPlayer)
         $('#textWeight').text('Weight(kg)')
         $('#textHeight').text('Height(m)')
         $('#weight').text(temp.strWeight)
