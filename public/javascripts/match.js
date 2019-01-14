@@ -4,8 +4,8 @@ function add(leagueData, idLeagues){
     $('#lvLeague').empty()
     for (let index = 0; index < leagueData.length; index++) {
         var temp = leagueData[index]
-        var date = `<h5>${temp.dateEvent} ${temp.strTime}</h5>`
-        var vs = `<h3>${temp.strEvent}</h3>`
+        var date = `<h5 style="text-align:center>${temp.dateEvent} ${temp.strTime}</h5>`
+        var vs = `<h3 style="text-align:center>${temp.strEvent}</h3>`
         var detail = `<a data-ajax="false" href="detail?e=${temp.idEvent}" data-role="button">Detail</a>`
         var listView = `<li><div>${date}${vs}${detail}</div></li>`
         $('#lvLeague').append(listView)
