@@ -80,7 +80,7 @@ $(document).ready(function(){
         window.location.href="/match"
     })
     $('#fav').click(function(){
-        $('#fav').value('Unfavorite')
+        $('#fav').attr('value', 'Unfavorite')
         var req = $.ajax({
             url : '/favEvent',
             type : 'POST',
@@ -115,7 +115,7 @@ $(function(){
     var req = $.ajax(opt)
     req.done(function(res){
         if(res.index > -1){
-            $('#fav').value('Unfavorite')
+            $('#fav').attr('value', 'Unfavorite')
         }
     })
     getData(idEvent)
