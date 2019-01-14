@@ -106,7 +106,6 @@ router.post('/favTeam', function(req,res){
 })
 
 router.post('/favEvent', function(req, res){
-  console.log(req.body)
   var query = `SELECT favEvent FROM useracc WHERE id =${req.body.id}`
   connection.query(query, null, function(e, result){
     if(e){
@@ -138,7 +137,7 @@ router.post('/checkFav', function(req, res){
   }
   connection.query(query, null, function(e, result){
     if(e){
-      res.send(200)
+      res.send(500)
       throw e
     }else{
       if(req.body.status == 'team'){
